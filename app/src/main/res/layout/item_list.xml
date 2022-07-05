@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#C5F6BD"
+        app:cardCornerRadius="26dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/matem"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Математика"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="6dp"/>
+
+
+        </LinearLayout>
+
+
+       <Button
+           android:id="@+id/btn_write"
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:text="Сделать записи "
+           android:textSize="18dp"
+           android:textColor="@color/black"
+           android:background="@drawable/btn_style"
+           android:layout_marginStart="240dp"
+           android:layout_marginTop="36dp"
+          />
+
+            </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

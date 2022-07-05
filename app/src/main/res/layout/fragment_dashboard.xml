@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_style">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_margin="6dp"/>
+        <TextView
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:text="Моя страница"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="36dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/my_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Паншеза Амир"
+        android:textAlignment="center"
+        android:textSize="26sp"
+
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/frame_style"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/my_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="146dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/my_foto" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        style="@drawable/frame_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="30dp"
+            android:text="Посмотреть расписание :"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_ponedelnik"
+           style="@style/ButtonLake"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Понедельник"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_vtornik"
+            style="@style/ButtonLake"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Вторник"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_sreda"
+            style="@style/ButtonLake"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Среда"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_Chetverg"
+            style="@style/ButtonLake"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Четверг"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_Pytnica"
+            style="@style/ButtonLake"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Пятница"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
